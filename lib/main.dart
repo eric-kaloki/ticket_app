@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ticket_app/base/bottom_nav_bar.dart';
 
 void main() {
+ 
   runApp(const MyApp());
 }
 
@@ -17,15 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title:const Center( child: Text('Flutter Demo')),
-          backgroundColor: const Color(0xFF2B5C23),
-        ),
-        body: const Center(
-        child: Text('Hello, World!'),
-      ),
-      ),
+      home: BottomNavBar(),
     );
   }
 }

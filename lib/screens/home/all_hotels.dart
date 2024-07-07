@@ -41,7 +41,6 @@ class HotelGridView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Container(
       margin: const EdgeInsets.only(right: 4),
       padding: const EdgeInsets.all(5.0),

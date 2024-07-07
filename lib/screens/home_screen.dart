@@ -5,6 +5,7 @@ import 'package:ticket_app/base/res/styles/app_styles.dart';
 import 'package:ticket_app/base/utils/all_json.dart';
 import 'package:ticket_app/base/widgets/app_double_text.dart';
 import 'package:ticket_app/base/widgets/ticket_view.dart';
+import 'package:ticket_app/screens/widgets/hotel.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -29,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -106,6 +108,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 smallText: 'View all',
                 func: () => Navigator.pushNamed(context, "/all_tickets"),
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              const SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Hotel(),
+                      Hotel(),
+                    ],
+                  )),
             ],
           ),
         ),

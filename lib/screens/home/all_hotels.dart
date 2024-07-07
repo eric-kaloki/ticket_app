@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
 import 'package:ticket_app/base/utils/all_json.dart';
-import 'package:ticket_app/screens/home/widgets/hotel.dart';
 
 class AllHotels extends StatelessWidget {
   const AllHotels({super.key});
@@ -10,7 +9,7 @@ class AllHotels extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("All Hotels"),
+        title: const Text("All Hotels"),
         backgroundColor: AppStyles.bgColor,
       ),
       backgroundColor: AppStyles.bgColor,

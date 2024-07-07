@@ -4,6 +4,7 @@ import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
 import 'package:ticket_app/base/utils/all_json.dart';
 import 'package:ticket_app/base/widgets/app_double_text.dart';
+import 'package:ticket_app/base/widgets/app_routes.dart';
 import 'package:ticket_app/base/widgets/ticket_view.dart';
 import 'package:ticket_app/screens/home/widgets/hotel.dart';
 
@@ -89,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     AppDoubleText(
                       bigText: 'Upcoming Flights ',
                       smallText: 'View all',
-                      func: () => Navigator.pushNamed(context, "/all_tickets"),
+                      func: () => Navigator.pushNamed(context, AppRoutes.allTickets),
                     ),
                     const SizedBox(
                       height: 20,

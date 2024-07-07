@@ -30,7 +30,6 @@ List<Map<String, dynamic>> ticketList = [
     'date': "3 MAY",
     'departure_time': '01:00 AM',
     'seat': 10
-
   },
   {
     'from': {'code': 'NB0', 'name': 'Naibobi'},
@@ -39,7 +38,6 @@ List<Map<String, dynamic>> ticketList = [
     'date': "18 MAY",
     'departure_time': '05:00 AM',
     'seat': 10
-
   },
   {
     'from': {'code': 'DAR', 'name': 'Dar es Salaam'},
@@ -48,6 +46,44 @@ List<Map<String, dynamic>> ticketList = [
     'date': "1 MAY",
     'departure_time': '08:00 AM',
     'seat': 10
+  },
+];
 
+List<Map<String, dynamic>> hotelList = [
+  {
+    'name': 'Open space',
+    'location': 'London',
+    'price': 25,
+    'image': 'hotel_room.png'
+  },
+  {
+    'name': 'GLobal Hotel',
+    'location': 'Nairobi',
+    'price': 25,
+    'image': 'hotel_room_view_2.png'
+  },
+  {
+    'name': 'Night Hotel',
+    'location': 'Dubai',
+    'price': 25,
+    'image': 'hotel_room_view_1.png'
+  },
+  {
+    'name': 'Open space',
+    'location': 'Shanghai',
+    'price': 25,
+    'image': 'hotel_room_1.png'
+  },
+  {
+    'name': 'Jupiter Hotel',
+    'location': 'Dhaka',
+    'price': 25,
+    'image': 'hotel_room_view_3.png'
+  },
+  {
+    'name': 'Sun Three',
+    'location': 'Singapore',
+    'price': 25,
+    'image': 'pool_view.png'
   },
 ];

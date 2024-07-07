@@ -3,14 +3,15 @@ import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
 
 class Hotel extends StatelessWidget {
-  const Hotel({super.key});
+  final Map<String, dynamic> hotel;
+  const Hotel({super.key, required this.hotel});
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      margin:const EdgeInsets.only(right: 16),
-      padding:const EdgeInsets.all(8.0),
+      margin: const EdgeInsets.only(right: 16),
+      padding: const EdgeInsets.all(8.0),
       width: size.width * 0.6,
       height: 350,
       decoration: BoxDecoration(
@@ -24,15 +25,16 @@ class Hotel extends StatelessWidget {
             decoration: BoxDecoration(
                 color: AppStyles.primaryColor,
                 borderRadius: BorderRadius.circular(12),
-                image: const DecorationImage(
-                    fit: BoxFit.cover, image: AssetImage(AppMedia.hotelRoon))),
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('assets/images/${hotel['image']}'))),
           ),
           const SizedBox(
             height: 10,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15.0),
-            child: Text("Open space",
+            child: Text(hotel['name'],
                 style: AppStyles.headLineStyle1.copyWith(
                   color: AppStyles.kakiColor,
                 )),
@@ -42,7 +44,7 @@ class Hotel extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15.0),
-            child: Text("London",
+            child: Text(hotel['location'],
                 style: AppStyles.headLineStyle3.copyWith(
                   color: Colors.white,
                 )),
@@ -52,7 +54,7 @@ class Hotel extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15.0),
-            child: Text("\$25/night",
+            child: Text("\$${hotel['price']}/night",
                 style: AppStyles.headLineStyle1.copyWith(
                   color: AppStyles.kakiColor,
                 )),

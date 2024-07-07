@@ -82,7 +82,7 @@ List<Map<String, dynamic>> hotelList = [
   },
   {
     'name': 'Sun Three',
-    'location': 'Singapore',
+    'location': 'Lagos',
     'price': 25,
     'image': 'pool_view.png'
   },

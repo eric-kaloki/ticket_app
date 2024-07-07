@@ -90,7 +90,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     AppDoubleText(
                       bigText: 'Upcoming Flights ',
                       smallText: 'View all',
-                      func: () => Navigator.pushNamed(context, AppRoutes.allTickets),
+                      func: () =>
+                          Navigator.pushNamed(context, AppRoutes.allTickets),
                     ),
                     const SizedBox(
                       height: 20,
@@ -108,7 +109,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     AppDoubleText(
                       bigText: 'Hotels',
                       smallText: 'View all',
-                      func: () {},
+                      func: () =>
+                          Navigator.pushNamed(context, AppRoutes.allHotels),
                     ),
                     const SizedBox(
                       height: 20,

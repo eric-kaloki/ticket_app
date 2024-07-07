@@ -20,9 +20,13 @@ class _TicketScreenCreate extends State<TicketScreen> {
   late int ticketIndex = 0;
   @override
   void didChangeDependencies() {
-    var args = ModalRoute.of(context)!.settings.arguments as Map;
-    print("passed index ${args['index']}");
-    ticketIndex = args['index'];
+    if (ModalRoute.of(context)!.settings.arguments != null) {
+      var args = ModalRoute.of(context)!.settings.arguments as Map;
+      print("passed index ${args['index']}");
+      ticketIndex = args['index'];
+    }
+ 
+
     super.didChangeDependencies();
   }
 

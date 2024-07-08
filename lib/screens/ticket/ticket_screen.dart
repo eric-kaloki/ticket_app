@@ -25,7 +25,6 @@ class _TicketScreenCreate extends State<TicketScreen> {
       print("passed index ${args['index']}");
       ticketIndex = args['index'];
     }
- 
 
     super.didChangeDependencies();
   }
@@ -207,6 +206,9 @@ class _TicketScreenCreate extends State<TicketScreen> {
               child: TicketView(
                 ticket: ticketList[ticketIndex],
               ),
+            ),
+            const SizedBox(
+              height: 10,
             ),
           ],
         ),
